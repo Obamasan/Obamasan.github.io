@@ -44,4 +44,12 @@ iframe
 	{
 		box-shadow: inset 5vmin 20vmin 0px 0px black, inset -5vmin -20vmin 0px 0px black;
 	}
+	
+	@media only screen and (max-height: 640px)
+	{
+		.overlay
+		{
+			box-shadow: inset 5vmin 30vmin 0px 0px black, inset -5vmin -40vmin 0px 0px black;
+		}
+	}
 }
