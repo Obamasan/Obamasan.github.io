@@ -49,7 +49,7 @@ iframe
 	{
 		.overlay
 		{
-			box-shadow: inset 5vmin 30vmin 0px 0px black, inset -5vmin -40vmin 0px 0px black;
+			box-shadow: inset 5vmin 30vmin 0px 0px black, inset -5vmin -50vmin 0px 0px black;
 		}
 	}
 }
