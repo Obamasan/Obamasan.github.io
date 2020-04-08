@@ -46,9 +46,10 @@
 					var frameX = (box.left + box.width) / 2;
 					var frameY = (box.top + box.height) / 2;
 					
-					var xmod = 15;
-					var ymod = 10;
-					var zmod = 10;
+					var scale = 1;
+					var xmod = 3*scale;
+					var ymod = 2*scale;
+					var zmod = 2*scale;
 					
 					var x = event.pageX - frameX;
 					var y = event.pageY - frameY;
@@ -62,8 +63,8 @@
 					else z = y*zmod;
 					x = -x*xmod;
 
-					var xbuffer = 10;
-					var ybuffer = 5;
+					var xbuffer = 2*scale;
+					var ybuffer = 1*scale;
 					if((event.pageX > (box.width/2)-xbuffer && event.pageX < (box.width/2)+xbuffer) && (event.pageY > (box.height/2)-ybuffer && event.pageY < (box.height/2)+ybuffer)) x = 0;
 					api.setCameraLookAt([x, -75, z], [0, 0, 0], 0);				
 					});
